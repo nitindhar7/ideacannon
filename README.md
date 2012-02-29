@@ -21,6 +21,8 @@ A list of project ideas that I will execute on sooner or later
 
 ### Chamber (wire framing and designing architecture)
 
+- *none yet*
+
 ### Magazine (first thought of the idea)
 
-- pipeline
+- [pipeline](https://github.com/nitindhar7/ideacannon/blob/master/ideas.md)
