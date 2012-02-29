@@ -11,10 +11,15 @@ PIPELINE
     f->g
     g->c
     h->
-
+    
+    a---->b<---.<-----.
+     `---------->c<---+---.
+      `-->d----->e----'-->g<--f
+    h
+    
     [b,c,g,e,d,a,f,h]
 
-**Algorithm (in words)**
+### Algorithm (in words)
 
 1. Maintain a set containing completed tasks
 2. Begin at task 'a'
@@ -32,9 +37,10 @@ PIPELINE
   - queue
   - resolve
   - call                # => call the next task in the queue
+  - chaining            # => call next task and pass it return value from prev
 
 - **Task**
-  - initialization?
+  - guid
   - recipient
   - message
   - params
@@ -43,3 +49,4 @@ PIPELINE
 ### Concerns
 
 - Multithreading
+- optimize algorithm (ex- maybe tasks that connect to anything could run first instead of waiting for a long chained command)
