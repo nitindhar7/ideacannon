@@ -1,7 +1,9 @@
 IDEACANNON
 ==========
 
-A list of project ideas that I will execute on sooner or later
+A list of project ideas that I will execute on sooner or later. Here's the order:
+
+Magazine (idea loaded) ---> Chamber (idea ready to be developed) ---> Barrel (idea in development) ---> Muzzle (idea released)
 
 ### Muzzle (released and in continuous development)
 

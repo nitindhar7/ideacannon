@@ -35,18 +35,24 @@ PIPELINE
   - loader              # => pipeline mapping
   - map                 # => hash from 'task' to '[..tasks..]'
   - queue
-  - resolve
+  - resolver
   - call                # => call the next task in the queue
-  - chaining            # => call next task and pass it return value from prev
+  - exec                # => call next task and pass it return value from prev
 
 - **Task**
-  - guid
+  - name
   - recipient
   - message
   - params
   - optional
+  - dependencies        # => run from yml file or setup schedule in code :p
+
+### References
+
+- [A recursive dependency algorithm](http://www.electricmonk.nl/log/2008/08/07/dependency-resolving-algorithm/)
 
 ### Concerns
 
-- Multithreading
+- circular dependencies
 - optimize algorithm (ex- maybe tasks that connect to anything could run first instead of waiting for a long chained command)
+- Multithreading
