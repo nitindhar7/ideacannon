@@ -27,4 +27,4 @@ Magazine (idea loaded) ---> Chamber (idea ready to be developed) ---> Barrel (id
 
 ### Magazine (first thought of the idea)
 
-- [pipeline](https://github.com/nitindhar7/ideacannon/blob/master/ideas.md)
+- [metro](https://github.com/nitindhar7/ideacannon/blob/master/ideas.md)

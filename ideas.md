@@ -1,5 +1,5 @@
-PIPELINE
---------
+METRO
+-----
 
 **Example**
 
@@ -28,6 +28,12 @@ PIPELINE
 5. If 'a' not completed, check its dependencies
 6. If there are dependencies try to resolve them recursively
 7. Repeat from Step 3. with the next task
+
+### Algorithm (rules)
+
+1. A task can be run if it has been resolved or has no dependencies
+2. Dedupe tasks inline
+3. No circular dependencies
 
 ### Objects
 
