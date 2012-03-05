@@ -85,10 +85,10 @@ mongo:
 
 <table>
     <tr>
-        <td>Action</td>
-        <td>Verb</td>
-        <td>URI</td>
-        <td>Scope</td>
+        <th>Action</th>
+        <th>Verb</th>
+        <th>URI</th>
+        <th>Scope</th>
     </tr>
     <tr>
         <td>index</td>
@@ -105,7 +105,7 @@ mongo:
     <tr>
         <td></td>
         <td>GET</td>
-        <td>/database/collection/{col name}/id</*></td>
+        <td>/database/collection/{col name}/id</td>
         <td>Document</td>
     </tr>
     <tr>
