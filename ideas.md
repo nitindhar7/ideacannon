@@ -97,42 +97,36 @@ mongo:
         <th>Action</th>
         <th>Verb</th>
         <th>URI</th>
-        <th>Scope</th>
         <th>Notes</th>
     </tr>
     <tr>
         <td>index</td>
         <td>GET</td>
         <td>/database/collections</td>
-        <td>Collection</td>
         <td>Return paginated results</td>
     </tr>
     <tr>
         <td>show</td>
         <td>GET</td>
         <td>/database/collections/{collection}</td>
-        <td>Collection</td>
         <td></td>
     </tr>
     <tr>
         <td>create</td>
         <td>POST</td>
         <td>/database/collections</td>
-        <td>Collection</td>
         <td></td>
     </tr>
     <tr>
         <td>update</td>
         <td>PUT</td>
         <td>/database/collections/{collection}</td>
-        <td>Collection</td>
         <td></td>
     </tr>
     <tr>
         <td>delete</td>
         <td>DELETE</td>
         <td>/database/collections/{collection}</td>
-        <td>Collection</td>
         <td></td>
     </tr>
 </table>
@@ -141,7 +135,8 @@ mongo:
 
 ### References
 
-- http://api.mongodb.org/ruby/current/file.TUTORIAL.html
+- [Mongo Ruby driver](http://api.mongodb.org/ruby/current/file.TUTORIAL.html)
+- [Rails routing](http://guides.rubyonrails.org/v2.3.11/routing.html#restful-routing-the-rails-default)
 
 * * *
 
