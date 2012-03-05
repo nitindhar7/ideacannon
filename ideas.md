@@ -76,12 +76,12 @@ library that maps incoming requests to mongo db by parsing request url/request d
 
 ### Configuration (config.yml)
 
-'''yaml
+```yaml
 mongo:
   host: localhost
   post: 27017
   database: test
-'''
+```
 
 ### Interface
 
