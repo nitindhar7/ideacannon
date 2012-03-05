@@ -76,6 +76,9 @@ The purpose of this library is to allow simple CRUD access to mongodb as if it w
 library that maps incoming requests to running mongo process by parsing the incoming request and routing it to the appropriate handler. The handler uses
 the [default Ruby driver](http://www.mongodb.org/display/DOCS/Ruby+Language+Center) to connect to mongo.  
 
+### Use Case
+
+
 ### Configuration (config.yml)
 
 ```yaml
@@ -87,6 +90,8 @@ mongo:
 
 ### Interface
 
+# Collections `/database/collections`
+
 <table>
     <tr>
         <th>Action</th>
@@ -96,48 +101,43 @@ mongo:
         <th>Notes</th>
     </tr>
     <tr>
-        <td>show</td>
+        <td>index</td>
         <td>GET</td>
         <td>/database/collections</td>
         <td>Collection</td>
-        <td>Will return paginated results</td>
+        <td>Return paginated results</td>
     </tr>
     <tr>
-        <td>read</td>
+        <td>show</td>
         <td>GET</td>
-        <td>/database/collection/{col name}</td>
+        <td>/database/collections/{collection}</td>
         <td>Collection</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>GET</td>
-        <td>/database/collection/{col name}/id</td>
-        <td>Document</td>
         <td></td>
     </tr>
     <tr>
         <td>create</td>
         <td>POST</td>
-        <td>/database/collection/{col name}</td>
+        <td>/database/collections</td>
         <td>Collection</td>
         <td></td>
     </tr>
     <tr>
         <td>update</td>
         <td>PUT</td>
-        <td>/database/collection/{col name}</td>
+        <td>/database/collections/{collection}</td>
         <td>Collection</td>
         <td></td>
     </tr>
     <tr>
         <td>delete</td>
         <td>DELETE</td>
-        <td>/database/collection/{col name}</td>
+        <td>/database/collections/{collection}</td>
         <td>Collection</td>
         <td></td>
     </tr>
 </table>
+
+# Documents `/database/collection/documents`
 
 ### References
 
