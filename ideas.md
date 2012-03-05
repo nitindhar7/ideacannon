@@ -71,4 +71,67 @@ METRO
 
 RESTFul mongoDb UI
 ==================
+The purpose of this library is to allow access to mongodb as if it were a web service returning JSON
 library that maps incoming requests to mongo db by parsing request url/request data and delegating to the mongo driver before returning data back.
+
+### Configuration (config.yml)
+
+mongo:
+  host: localhost
+  post: 27017
+  database: test
+
+### Interface
+
+<table>
+    <tr>
+        <td>Action</td>
+        <td>Verb</td>
+        <td>URI</td>
+        <td>Scope</td>
+    </tr>
+    <tr>
+        <td>index</td>
+        <td>GET</td>
+        <td>/database/collections</td>
+        <td>Collection</td>
+    </tr>
+    <tr>
+        <td>show</td>
+        <td>GET</td>
+        <td>/database/collection/{col name}</td>
+        <td>Collection</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>GET</td>
+        <td>/database/collection/{col name}/id</*></td>
+        <td>Document</td>
+    </tr>
+    <tr>
+        <td>new</td>
+        <td>POST</td>
+        <td>/database/collection/{col name}</td>
+        <td>Collection</td>
+    </tr>
+    <tr>
+        <td>edit</td>
+        <td>PUT</td>
+        <td>/database/collection/{col name}</td>
+        <td>Collection</td>
+    </tr>
+    <tr>
+        <td>delete</td>
+        <td>DELETE</td>
+        <td>/database/collection/{col name}</td>
+        <td>Collection</td>
+    </tr>
+</table>
+
+### References
+
+- http://api.mongodb.org/ruby/current/file.TUTORIAL.html
+
+Android Tabs plugin
+===================
+An eclipse library project that can be used to added as a plugin to create tabs easily.
