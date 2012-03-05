@@ -1,5 +1,5 @@
 METRO
------
+=====
 
 **Example**
 
@@ -53,6 +53,11 @@ METRO
   - optional
   - dependencies        # => run from yml file or setup schedule in code :p
 
+### Scratch Pad
+
+1. Use Case: Pricing
+  - Get all products
+
 ### References
 
 - [A recursive dependency algorithm](http://www.electricmonk.nl/log/2008/08/07/dependency-resolving-algorithm/)
@@ -62,3 +67,8 @@ METRO
 - circular dependencies
 - optimize algorithm (ex- maybe tasks that connect to anything could run first instead of waiting for a long chained command)
 - Multithreading
+
+
+RESTFul mongoDb UI
+==================
+library that maps incoming requests to mongo db by parsing request url/request data and delegating to the mongo driver before returning data back.
