@@ -68,11 +68,13 @@ METRO
 - optimize algorithm (ex- maybe tasks that connect to anything could run first instead of waiting for a long chained command)
 - Multithreading
 
+* * *
 
-RESTFul mongoDb UI
+RESTful mongoDb UI
 ==================
-The purpose of this library is to allow access to mongodb as if it were a web service returning JSON
-library that maps incoming requests to mongo db by parsing request url/request data and delegating to the mongo driver before returning data back.
+The purpose of this library is to allow simple CRUD access to mongodb as if it were a web service interacting via HTTP using json. Basically this 
+library that maps incoming requests to running mongo process by parsing the incoming request and routing it to the appropriate handler. The handler uses
+the [default Ruby driver](http://www.mongodb.org/display/DOCS/Ruby+Language+Center) to connect to mongo.  
 
 ### Configuration (config.yml)
 
@@ -91,48 +93,57 @@ mongo:
         <th>Verb</th>
         <th>URI</th>
         <th>Scope</th>
-    </tr>
-    <tr>
-        <td>index</td>
-        <td>GET</td>
-        <td>/database/collections</td>
-        <td>Collection</td>
+        <th>Notes</th>
     </tr>
     <tr>
         <td>show</td>
         <td>GET</td>
+        <td>/database/collections</td>
+        <td>Collection</td>
+        <td>Will return paginated results</td>
+    </tr>
+    <tr>
+        <td>read</td>
+        <td>GET</td>
         <td>/database/collection/{col name}</td>
         <td>Collection</td>
+        <td></td>
     </tr>
     <tr>
         <td></td>
         <td>GET</td>
         <td>/database/collection/{col name}/id</td>
         <td>Document</td>
+        <td></td>
     </tr>
     <tr>
-        <td>new</td>
+        <td>create</td>
         <td>POST</td>
         <td>/database/collection/{col name}</td>
         <td>Collection</td>
+        <td></td>
     </tr>
     <tr>
-        <td>edit</td>
+        <td>update</td>
         <td>PUT</td>
         <td>/database/collection/{col name}</td>
         <td>Collection</td>
+        <td></td>
     </tr>
     <tr>
         <td>delete</td>
         <td>DELETE</td>
         <td>/database/collection/{col name}</td>
         <td>Collection</td>
+        <td></td>
     </tr>
 </table>
 
 ### References
 
 - http://api.mongodb.org/ruby/current/file.TUTORIAL.html
+
+* * *
 
 Android Tabs plugin
 ===================
