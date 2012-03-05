@@ -90,7 +90,7 @@ mongo:
 
 ### Interface
 
-# Collections `/database/collections`
+###### Collections `/database/collections`
 
 <table>
     <tr>
@@ -137,7 +137,7 @@ mongo:
     </tr>
 </table>
 
-# Documents `/database/collection/documents`
+###### Documents `/database/collection/documents`
 
 ### References
 
