@@ -30,3 +30,4 @@ Magazine (idea loaded) ---> Chamber (idea ready to be developed) ---> Barrel (id
 - [metro](https://github.com/nitindhar7/ideacannon/blob/master/ideas.md)
 - RESTFul mongoDb UI
 - Android Tabs plugin
+- Forrst Chrome Plugin!!!
