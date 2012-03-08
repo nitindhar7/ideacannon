@@ -234,7 +234,7 @@ HTML produced is (*hiding header, body, footer & right_col for brevity*):
 </div>
 ```
 
-###### Customizing
+#### Customizing
 
 Create HtmlObjects without certain zones is extremely easy. For example, the following works if you want a layout with just the left/right columns and a body:
 
