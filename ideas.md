@@ -234,9 +234,18 @@ HTML produced is (*hiding header, body, footer & right_col for brevity*):
 </div>
 ```
 
+#### Goals
+
+I refuse to proceed without goals!
+
+- Flexibility (easy to create customizable elements)
+- Manageability (concise and easy to change)
+- Testability (everything can be tested)
+- Semantic (layouts make sense)
+
 #### Customizing
 
-Create HtmlObjects without certain zones is extremely easy. For example, the following works if you want a layout with just the left/right columns and a body:
+Creating HtmlObjects without certain zones is extremely easy. For example, the following works if you want a layout with just the left/right columns and a body:
 
 ```ruby
 # Skip rendering header/footer
@@ -264,3 +273,35 @@ The above produces:
 |   |         |   |   |
 '---------------------'
 ```
+
+Another example:
+
+```ruby
+base = HtmlObject.new(:left_col, :right_col)
+
+base.body = HtmlObject.new(:left_col, :right_col)
+
+base.body.header = HtmlObject.new(:left_col, :header, :footer, :right_col)
+```
+
+```html
+<div class="header">
+</div>
+<div class="body">
+    <div class="header">
+        <div class="body">
+        </div>
+    </div>
+    <div class="body">
+    </div>
+    <div class="footer">
+    </div>
+</div>
+<div class="footer">
+</div>
+```
+
+#### Next Steps
+
+- Ability to add styles in code instead of in css
+- Semantic elements
