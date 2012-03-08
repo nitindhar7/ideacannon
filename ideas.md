@@ -233,15 +233,6 @@ HTML produced is (*hiding header, body, footer & right_col for brevity*):
     <div class="left_col">
         <!-- background will be gray -->
     </div>
-    
-</div>
-<div class="header">
-</div>
-<div class="body">
-</div>
-<div class="footer">
-</div>
-<div class="right_col">
 </div>
 ```
 
