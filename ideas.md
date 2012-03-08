@@ -168,7 +168,7 @@ An abstract object, HtmlObject, with 5 basic zones
 - footer
 - right column
 
-where each zone itself is a nested HtmlObject with 5 zones as well. This can continue infinitely, but why do that? The point of **roocss** is to simplify!
+where each zone itself is a nested HtmlObject with 5 zones as well. This can continue infinitely, but why do that? **The point of roocss is to simplify!**
 
 ```ruby
 class HtmlObject
@@ -203,4 +203,58 @@ Here's a move visual description of what the ruby code creates:
 '-----------------'
 ```
 
-as you move down the heirachy you can override styles from above (but the point of inheritence is also to be able to get more specific, ie, define more styles that dont exist above - how to tackle that?)
+WHICH ONES ARE OPTIONAL!?!?!?!?
+
+As you move down the hierachy of 'HtmlObjects' you can override styles specified above. Another thing to keep in mind is that the point of such 
+inheritance is to be able to get more specific the more nested an object gets, i.e., define more styles near the leaf nodes that don't exist in parents.
+
+Lets run though a really simple example. Say we have a base layout (with a left column) defined by the following object/css:
+
+```ruby
+base = HtmlObject.new
+base.left_col = HtmlObject.new
+```
+
+```css
+.left_col {
+    background: white;
+}
+
+.left_col .left_col {
+    background: gray;
+}
+```
+
+HTML produced is:
+
+```html
+<div class="left_col">
+    <!-- background will be white -->
+    <div class="left_col">
+        <!-- background will be gray -->
+    </div>
+    <div class="header">
+    </div>
+    <div class="body">
+    </div>
+    <div class="footer">
+    </div>
+    <div class="right_col">
+    </div>
+</div>
+<div class="header">
+</div>
+<div class="body">
+</div>
+<div class="footer">
+</div>
+<div class="right_col">
+</div>
+```
+
+
+
+
+
+
+HOW DO I SPECIFY WHICH OPTIONAL ZONES I WANT?!?!
