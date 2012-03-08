@@ -153,8 +153,8 @@ An eclipse library project that can be used to added as a plugin to create tabs 
 
 * * *
 
-roocss
-======
+roocss - Experiments with OOCSS
+===============================
 A templating system that allows you to define html elements as abstract objects with some properties and then genenrate HTML from them. Basically this
 will allow you to create extremely testable & manageable and highly flexible layouts. roocss is based on oocss created by [Nicole Sullivan](https://github.com/stubbornella/oocss)
 
@@ -162,11 +162,11 @@ will allow you to create extremely testable & manageable and highly flexible lay
 
 An abstract object, HtmlObject, with 5 basic zones
 
-- left column
-- header
-- body
-- footer
-- right column
+- left column *optional*
+- header *optional*
+- body **required**
+- footer *optional*
+- right column *optional*
 
 where each zone itself is a nested HtmlObject with 5 zones as well. This can continue infinitely, but why do that? **The point of roocss is to simplify!**
 
@@ -203,8 +203,6 @@ Here's a move visual description of what the ruby code creates:
 '-----------------'
 ```
 
-WHICH ONES ARE OPTIONAL!?!?!?!?
-
 As you move down the hierachy of 'HtmlObjects' you can override styles specified above. Another thing to keep in mind is that the point of such 
 inheritance is to be able to get more specific the more nested an object gets, i.e., define more styles near the leaf nodes that don't exist in parents.
 
@@ -236,9 +234,33 @@ HTML produced is (*hiding header, body, footer & right_col for brevity*):
 </div>
 ```
 
+###### Customizing
 
+Create HtmlObjects without certain zones is extremely easy. For example, the following works if you want a layout with just the left/right columns and a body:
 
+```ruby
+# Skip rendering header/footer
+base = HtmlObject.new(:header, :footer)
 
+# and a body with just a right column
+base.body = HtmlObject.new(:left_col, :header, :footer)
+```
 
+The above produces:
 
-HOW DO I SPECIFY WHICH OPTIONAL ZONES I WANT?!?!
+```ruby
+    |---body of
+        parent----|
+        
+    |---body
+        of
+        child-|
+    
+.---------------------.
+|   |         |   |   |
+|   |         |   |   |
+| l |    b    | r | r |
+|   |         |   |   |
+|   |         |   |   |
+'---------------------'
+```
