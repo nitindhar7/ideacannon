@@ -176,7 +176,7 @@ class HtmlObject
 end
 ```
 
-The above code produces the following HTML:
+The above class produces the following HTML:
 
 ```html
 <div class="left_col">
@@ -191,7 +191,7 @@ The above code produces the following HTML:
 </div>
 ```
 
-Here's a move visual description of what the ruby code creates:
+Here's a picture of it:
 
 ```ruby
 .-----------------.
@@ -218,7 +218,7 @@ base.left_col = HtmlObject.new
     background: white;
 }
 
-.left_col .left_col {
+.left_col > .left_col {
     background: gray;
 }
 ```
@@ -300,6 +300,21 @@ base.body.header = HtmlObject.new(:left_col, :header, :footer, :right_col)
 <div class="footer">
 </div>
 ```
+
+And if I wanted to style the above:
+
+```css
+.header { background: white; }
+.header > .header { background: gray; color: red; } /* override parent styling + add specific style */
+
+.body { background: white; }
+.body > .body { background: blue; } /* override parent styling */
+.body > .body > .body { background: red; } /* override parent styling again */
+```
+
+Use `.parent > .child {}` selectors in your CSS for reliable results. For common styling use `.parent .child {}`
+
+*NOTE: The order of styles matters in CSS. Be careful!*
 
 #### Next Steps
 
