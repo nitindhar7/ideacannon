@@ -1,5 +1,4 @@
-IDEACANNON
-==========
+![Ideacannon](https://forrst-production.s3.amazonaws.com/posts/snaps/123454/original.png?1323847557 "Ideacannon")
 
 A list of project ideas that I will execute on sooner or later. Here's the order:
 
