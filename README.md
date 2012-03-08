@@ -1,5 +1,4 @@
-IDEACANNON
-==========
+![Ideacannon](https://forrst-production.s3.amazonaws.com/posts/snaps/123454/original.png?1323847557 "Ideacannon")
 
 A list of project ideas that I will execute on sooner or later. Here's the order:
 
@@ -30,3 +29,7 @@ Magazine (idea loaded) ---> Chamber (idea ready to be developed) ---> Barrel (id
 - [metro](https://github.com/nitindhar7/ideacannon/blob/master/ideas.md)
 - [blaze](https://github.com/nitindhar7/ideacannon/blob/master/ideas.md)
 - Android Tabs plugin
+- RESTFul mongoDb UI
+- Android Tabs plugin
+- Forrst Chrome Plugin!!!
+- OOCSS Templating - Ruby
