@@ -70,14 +70,17 @@ METRO
 
 * * *
 
-RESTful mongoDb UI
-==================
+blaze
+=====
 The purpose of this library is to allow simple CRUD access to mongodb as if it were a web service interacting via HTTP using json. Basically this 
 library that maps incoming requests to running mongo process by parsing the incoming request and routing it to the appropriate handler. The handler uses
 the [default Ruby driver](http://www.mongodb.org/display/DOCS/Ruby+Language+Center) to connect to mongo.  
 
 ### Use Case
 
+MongoDB stores all kinds of data in memory and it would be extremely useful if this data was available in the form of a web service.
+
+Similar to Riak's use case
 
 ### Configuration (config.yml)
 
@@ -132,6 +135,10 @@ mongo:
 </table>
 
 ###### Documents `/database/collection/documents`
+
+### Misc
+
+- zlib data transport
 
 ### References
 
