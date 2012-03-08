@@ -225,7 +225,7 @@ base.left_col = HtmlObject.new
 }
 ```
 
-HTML produced is:
+HTML produced is (*hiding header, body, footer & right_col for brevity*):
 
 ```html
 <div class="left_col">
@@ -233,14 +233,7 @@ HTML produced is:
     <div class="left_col">
         <!-- background will be gray -->
     </div>
-    <div class="header">
-    </div>
-    <div class="body">
-    </div>
-    <div class="footer">
-    </div>
-    <div class="right_col">
-    </div>
+    
 </div>
 <div class="header">
 </div>
