@@ -31,3 +31,4 @@ Magazine (idea loaded) ---> Chamber (idea ready to be developed) ---> Barrel (id
 - RESTFul mongoDb UI
 - Android Tabs plugin
 - Forrst Chrome Plugin!!!
+- OOCSS Templating - Ruby
