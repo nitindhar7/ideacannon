@@ -200,7 +200,7 @@ Here's a move visual description of what the ruby code creates:
 | l |    b    | r |
 |   |_________|   |
 |   |    f    |   |
-`-----------------'
+'-----------------'
 ```
 
 as you move down the heirachy you can override styles from above (but the point of inheritence is also to be able to get more specific, ie, define more styles that dont exist above - how to tackle that?)
