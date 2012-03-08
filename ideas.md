@@ -150,3 +150,55 @@ mongo:
 Android Tabs plugin
 ===================
 An eclipse library project that can be used to added as a plugin to create tabs easily.
+
+* * *
+
+roocss
+======
+A templating system that allows you to define html elements as abstract objects with some properties and then genenrate HTML from them. Basically this
+will allow you to create extremely testable & manageable and highly flexible layouts. roocss is based on oocss created by [Nicole Sullivan](https://github.com/stubbornella/oocss)
+
+#### Details
+
+An abstract object, HtmlObject, with 5 basic zones
+
+- left column
+- header
+- body
+- footer
+- right column
+
+where each zone itself is a nested HtmlObject with 5 zones as well. This can continue infinitely, but why do that? The point of **roocss** is to simplify!
+
+```ruby
+class HtmlObject
+    attr_accessors :left_col, :header, :body, :footer, :right_col
+end
+```
+
+The above code produces the following HTML:
+
+```html
+<div class="left_col">
+</div>
+<div class="header">
+</div>
+<div class="body">
+</div>
+<div class="footer">
+</div>
+<div class="right_col">
+</div>
+```
+
+Here's a move visual description of what the ruby code creates:
+
+.-----------------.
+|   |____h____|   |
+|   |         |   |
+| l |    b    | r |
+|   |_________|   |
+|   |    f    |   |
+`-----------------'
+
+as you move down the heirachy you can override styles from above (but the point of inheritence is also to be able to get more specific, ie, define more styles that dont exist above - how to tackle that?)
