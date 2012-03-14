@@ -30,6 +30,6 @@ Magazine (idea loaded) ---> Chamber (idea ready to be developed) ---> Barrel (id
 - [blaze](https://github.com/nitindhar7/ideacannon/blob/master/ideas.md)
 - Android Tabs plugin
 - RESTFul mongoDb UI
-- Android Tabs plugin
 - Forrst Chrome Plugin!!!
 - OOCSS Templating - Ruby
+- simple-http-request - common http request lib for java projects
