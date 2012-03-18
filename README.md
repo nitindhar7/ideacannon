@@ -26,11 +26,11 @@ Magazine (idea loaded) ---> Chamber (idea ready to be developed) ---> Barrel (id
 
 ### Magazine (first thought of the idea)
 
-- [metro](https://github.com/nitindhar7/ideacannon/blob/master/ideas.md)
-- [blaze](https://github.com/nitindhar7/ideacannon/blob/master/ideas.md)
-- Android Tabs plugin
+- [metro](https://github.com/nitindhar7/ideacannon/blob/master/metro.md)
+- [blaze](https://github.com/nitindhar7/ideacannon/blob/master/blaze.md)
+- [Android Tabs plugin](https://github.com/nitindhar7/ideacannon/blob/master/android-tabs-plugin.md)
 - RESTFul mongoDb UI
-- Forrst Chrome Plugin!!!
-- OOCSS Templating - Ruby
+- Forrst Chrome Plugin
+- [OOCSS Templating - Ruby](https://github.com/nitindhar7/ideacannon/blob/master/roocss.md)
 - simple-http-request - common http request lib for java projects
 - consolidate all API libraries into an all-in-one lib
