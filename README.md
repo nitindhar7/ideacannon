@@ -33,3 +33,4 @@ Magazine (idea loaded) ---> Chamber (idea ready to be developed) ---> Barrel (id
 - Forrst Chrome Plugin!!!
 - OOCSS Templating - Ruby
 - simple-http-request - common http request lib for java projects
+- consolidate all API libraries into an all-in-one lib
