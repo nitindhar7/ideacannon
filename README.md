@@ -34,3 +34,4 @@ Magazine (idea loaded) ---> Chamber (idea ready to be developed) ---> Barrel (id
 - [OOCSS Templating - Ruby](https://github.com/nitindhar7/ideacannon/blob/master/roocss.md)
 - simple-http-request - common http request lib for java projects
 - consolidate all API libraries into an all-in-one lib
+- Ruby websocket framework
