@@ -35,3 +35,6 @@ Magazine (idea loaded) ---> Chamber (idea ready to be developed) ---> Barrel (id
 - simple-http-request - common http request lib for java projects
 - consolidate all API libraries into an all-in-one lib
 - Ruby websocket framework
+- Java exponential backoff wrapper for ListenableFuture
+- JS slider library that changes pages using a vertical slider
+- Queuing experiments in Ruby
