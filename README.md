@@ -38,3 +38,4 @@ Magazine (idea loaded) ---> Chamber (idea ready to be developed) ---> Barrel (id
 - Java exponential backoff wrapper for ListenableFuture
 - JS slider library that changes pages using a vertical slider
 - Queuing experiments in Ruby
+- Gem to watermark images
