@@ -12,6 +12,7 @@ Magazine (idea loaded) ---> Chamber (idea ready to be developed) ---> Barrel (id
 - [android-tabs](https://github.com/nitindhar7/android-tabs)
 - [bucketread](http://bucketread.basedataapp.com/)
 - [rangr](https://github.com/nitindhar7/rangr)
+- [photile](https://github.com/nitindhar7/photile)
 
 ### Barrel (in development)
 
@@ -38,4 +39,4 @@ Magazine (idea loaded) ---> Chamber (idea ready to be developed) ---> Barrel (id
 - Java exponential backoff wrapper for ListenableFuture
 - JS slider library that changes pages using a vertical slider
 - Queuing experiments in Ruby
-- Gem to watermark images
+- waypoints/anchors using JS relying on counting (www.example.com#myid VS. www.example.com##a=2##div=15##)
